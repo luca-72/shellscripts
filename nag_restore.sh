@@ -1,6 +1,8 @@
 #!/bin/bash
 
-#This script is to perform the System Restore Process of My Nagiosxi backup server. 
+#This script is to perform the System Restore Process for Nagiosxi backup server.
+
+
 
 restorefile=$restorefile
 
@@ -12,7 +14,7 @@ restorefile=$restorefile
 
           echo "$restorefile"
 
-          echo " The Restore Process will now Commence"
+          echo " The Restore Process will now Commence
 
           /usr/local/nagiosxi/scripts/restore_xi.sh /store/backups/nagiosxi/$restorefile
 
