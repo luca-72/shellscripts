@@ -28,6 +28,12 @@ restorefile=$restorefile
           service ndo2db start
           sleep 8
           service mysqld restart
+          #mail -s "Nagiosxi Server Restore" email@address.com <<< "The server restore has completed. Please log in and change the host access URL in the Admin tab "
+
+          export SUBJECT=Nagiosxi Server Restore
+          export smtp=smtp.medhost.com:25
+          export EMAIL=werner.mendoza@medhost.com
+          echo "The server restore has completed. Please log in and change the host access URL in the Admin tab" | mailx -s "$SUBJECT" "$EMAIL"
 
 
 }
