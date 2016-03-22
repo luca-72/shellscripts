@@ -31,8 +31,8 @@ restorefile=$restorefile
           #mail -s "Nagiosxi Server Restore" email@address.com <<< "The server restore has completed. Please log in and change the host access URL in the Admin tab "
 
           export SUBJECT=Nagiosxi Server Restore
-          export smtp=smtp.medhost.com:25
-          export EMAIL=werner.mendoza@medhost.com
+          export smtp=
+          export EMAIL=
           echo "The server restore has completed. Please log in and change the host access URL in the Admin tab" | mailx -s "$SUBJECT" "$EMAIL"
 
 
